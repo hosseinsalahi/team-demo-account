@@ -1,0 +1,13 @@
+apiVersion: marketplace.kratix.io/v1alpha2
+kind: Postgresql
+metadata:
+  name: team-c
+  namespace: default
+  labels:
+    backstage.io/kubernetes-id: sample-app
+    app.kubernetes.io/name: postgresql
+    app.kubernetes.io/part-of: sample-app
+spec:
+  dbName: team-c
+  env: dev
+  teamId: guests
